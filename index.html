@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Cucullu — Personality Profile</title>
+  <meta name="description" content="Personality profile of Francisco Cucullu, AI Product Manager — frameworks, traits, decision-making, motivations and growth roadmap." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta property="og:title" content="Francisco Cucullu — Personality Profile" />
+  <meta property="og:description" content="The Ambitious Catalyst — an AI Product Manager's full personality profile." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://personality.franciscocucullu.com" />
+  <link rel="icon" href="https://franciscocucullu.com/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gray-0: #ffffff;
+      --gray-50: #f3f4f7;
+      --gray-100: #e3e6ee;
+      --gray-200: #c3cadb;
+      --gray-300: #a3acc8;
+      --gray-400: #8490b5;
+      --gray-500: #6474a2;
+      --gray-600: #505d84;
+      --gray-700: #3d4663;
+      --gray-800: #283044;
+      --gray-900: #141925;
+      --gray-999: #090b11;
+
+      --accent-light: #c561f6;
+      --accent-regular: #7611a6;
+      --accent-dark: #1c0056;
+      --accent-overlay: hsla(280, 89%, 67%, 0.12);
+
+      --gradient-accent: linear-gradient(150deg, var(--accent-light), var(--accent-regular), var(--accent-dark));
+      --gradient-accent-orange: linear-gradient(150deg, #ca7879, var(--accent-regular), var(--accent-light));
+      --gradient-text: linear-gradient(120deg, #e9d5ff, #c561f6 55%, #9333ea);
+
+      --font-body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      --font-brand: 'Rubik', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      --radius: 16px;
+      --card-bg: hsla(225, 31%, 9%, 0.66);
+      --card-border: hsla(280, 60%, 70%, 0.14);
+      --shadow-lg: 0 24px 60px rgba(0,0,0,0.45);
+    }
+
+    :root.theme-light {
+      --gray-0: #090b11;
+      --gray-50: #141925;
+      --gray-100: #283044;
+      --gray-200: #3d4663;
+      --gray-300: #505d84;
+      --gray-400: #6474a2;
+      --gray-500: #8490b5;
+      --gray-600: #a3acc8;
+      --gray-700: #c3cadb;
+      --gray-800: #e3e6ee;
+      --gray-900: #f3f4f7;
+      --gray-999: #ffffff;
+      --accent-light: #7611a6;
+      --accent-regular: #7611a6;
+      --accent-dark: #c561f6;
+      --gradient-text: linear-gradient(120deg, #7611a6, #9333ea 55%, #c561f6);
+      --card-bg: hsla(0, 0%, 100%, 0.72);
+      --card-border: hsla(280, 50%, 50%, 0.18);
+      --shadow-lg: 0 20px 48px rgba(20,16,40,0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { min-height: 100%; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--gray-200);
+      line-height: 1.6;
+      background-color: var(--gray-999);
+      background-image:
+        radial-gradient(1100px 520px at 50% -8%, var(--accent-overlay), transparent 70%),
+        radial-gradient(800px 420px at 88% 8%, hsla(280,89%,67%,0.10), transparent 70%),
+        radial-gradient(900px 600px at 0% 100%, hsla(280,89%,67%,0.06), transparent 70%);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    /* subtle film grain */
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      pointer-events: none;
+      opacity: 0.035;
+      z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    h1, h2, h3, h4 { font-family: var(--font-brand); color: var(--gray-100); line-height: 1.12; }
+
+    /* ---------- Theme toggle ---------- */
+    .theme-toggle {
+      position: fixed; top: 20px; right: 20px; z-index: 50;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      backdrop-filter: blur(10px);
+      color: var(--gray-200); border-radius: 999px;
+      padding: 9px 14px; font: 600 0.8rem var(--font-body);
+      cursor: pointer; transition: transform .2s, border-color .2s;
+    }
+    .theme-toggle:hover { transform: translateY(-1px); border-color: var(--accent-light); }
+
+    /* ---------- Hero ---------- */
+    header.hero {
+      position: relative; z-index: 1;
+      text-align: center;
+      padding: 92px 24px 56px;
+    }
+    .hero .eyebrow {
+      display: inline-block;
+      font: 700 0.72rem var(--font-body); letter-spacing: 3px; text-transform: uppercase;
+      color: var(--accent-light);
+      padding: 6px 16px; border: 1px solid var(--card-border); border-radius: 999px;
+      background: var(--accent-overlay); margin-bottom: 22px;
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 7vw, 4.6rem); font-weight: 800; letter-spacing: -1px;
+      background: var(--gradient-text); -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero .role { margin-top: 10px; font-size: clamp(1rem, 2.5vw, 1.3rem); color: var(--gray-400); font-weight: 500; }
+    .badge-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 26px; }
+    .badge {
+      font: 700 0.74rem var(--font-body); letter-spacing: 1.5px;
+      color: var(--gray-100);
+      border-radius: 999px; padding: 8px 18px;
+      background: linear-gradient(150deg, hsla(280,60%,40%,0.35), hsla(280,40%,20%,0.25));
+      border: 1px solid var(--card-border);
+    }
+
+    /* ---------- Layout ---------- */
+    .container { position: relative; z-index: 1; max-width: 1000px; margin: 0 auto; padding: 0 20px 96px; }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      backdrop-filter: blur(14px);
+      margin-bottom: 26px;
+      overflow: hidden;
+      opacity: 0; transform: translateY(22px);
+      transition: opacity .6s ease, transform .6s ease, border-color .3s;
+    }
+    .card.in { opacity: 1; transform: none; }
+    .card:hover { border-color: hsla(280,70%,70%,0.30); }
+
+    .card-head {
+      display: flex; align-items: center; gap: 12px;
+      padding: 18px 26px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .card-head .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gradient-accent); flex: none; box-shadow: 0 0 12px var(--accent-light); }
+    .card-head h2 { font-size: 1.02rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gray-100); }
+    .card-head .accent-on-pink { color: var(--accent-light); }
+    .card-body { padding: 24px 26px; }
+    .card-body p { color: var(--gray-300); margin-bottom: 12px; }
+    .card-body p:last-child { margin-bottom: 0; }
+
+    ul.clean { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    ul.clean li { position: relative; padding-left: 26px; color: var(--gray-300); }
+    ul.clean li::before {
+      content: ""; position: absolute; left: 4px; top: 9px;
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--gradient-accent);
+    }
+
+    .sub { font: 700 0.82rem var(--font-brand); letter-spacing: 1px; text-transform: uppercase; color: var(--accent-light); margin: 22px 0 12px; }
+    .sub:first-child { margin-top: 0; }
+
+    .sources { margin-top: 18px; display: inline-flex; align-items: center; gap: 7px; font-size: 0.74rem; color: var(--gray-500); border: 1px solid var(--card-border); border-radius: 999px; padding: 4px 12px; }
+    .sources::before { content: "◆"; color: var(--accent-light); font-size: 0.6rem; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+
+    /* ---------- Accuracy ---------- */
+    .accuracy { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; }
+    .ring { position: relative; width: 124px; height: 124px; flex: none; }
+    .ring svg { transform: rotate(-90deg); }
+    .ring .score { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .ring .score b { font: 800 2.1rem var(--font-brand); color: var(--gray-50); }
+    .ring .score span { font-size: 0.7rem; color: var(--gray-500); letter-spacing: 1px; }
+    .accuracy .desc strong { color: var(--gray-100); }
+    .accuracy .desc .next { display: inline-block; margin-top: 8px; font-style: italic; color: var(--gray-400); font-size: 0.9rem; }
+
+    /* ---------- Frameworks ---------- */
+    .fw-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .fw {
+      background: hsla(280, 40%, 30%, 0.10);
+      border: 1px solid var(--card-border); border-radius: 12px; padding: 16px 18px;
+    }
+    .fw .k { font: 700 0.7rem var(--font-body); letter-spacing: 1.5px; text-transform: uppercase; color: var(--gray-500); }
+    .fw .v { margin-top: 6px; font: 700 1.05rem var(--font-brand); color: var(--gray-50); }
+
+    /* ---------- Traits ---------- */
+    .trait { margin-bottom: 18px; }
+    .trait:last-child { margin-bottom: 0; }
+    .trait .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 7px; gap: 12px; }
+    .trait .name { font: 600 0.95rem var(--font-body); color: var(--gray-100); }
+    .trait .val { font-size: 0.8rem; color: var(--gray-400); text-align: right; }
+    .bar { height: 10px; background: hsla(225, 30%, 30%, 0.35); border-radius: 999px; overflow: hidden; }
+    .bar > i { display: block; height: 100%; width: 0; border-radius: 999px; background: var(--gradient-accent); box-shadow: 0 0 16px hsla(280,89%,67%,0.5); transition: width 1.2s cubic-bezier(.2,.8,.2,1); }
+
+    /* ---------- Stress patterns ---------- */
+    .stress-box { border-radius: 12px; padding: 16px 18px; margin-bottom: 14px; border: 1px solid; }
+    .stress-box .t { font: 700 0.86rem var(--font-brand); letter-spacing: .5px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .lvl1 { background: hsla(45, 90%, 50%, 0.07); border-color: hsla(45, 90%, 55%, 0.30); }
+    .lvl1 .t { color: #f1c40f; }
+    .lvl2 { background: hsla(28, 90%, 50%, 0.08); border-color: hsla(28, 90%, 55%, 0.32); }
+    .lvl2 .t { color: #e67e22; }
+    .lvl3 { background: hsla(0, 80%, 50%, 0.09); border-color: hsla(0, 80%, 55%, 0.34); }
+    .lvl3 .t { color: #e74c3c; }
+    .stress-box ul.clean li::before { background: currentColor; }
+    .lvl1 ul.clean li::before { background: #f1c40f; }
+    .lvl2 ul.clean li::before { background: #e67e22; }
+    .lvl3 ul.clean li::before { background: #e74c3c; }
+
+    /* ---------- Roadmap ---------- */
+    .road { border-radius: 12px; padding: 16px 18px; border: 1px solid var(--card-border); background: hsla(280,40%,30%,0.07); }
+    .road.go .sub { color: #2ecc71; }
+    .road.stop .sub { color: #e74c3c; }
+    .road.try { background: hsla(280,60%,45%,0.10); margin-top: 18px; }
+
+    /* ---------- Tags ---------- */
+    .tagwrap { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      font: 600 0.82rem var(--font-body); color: var(--gray-100);
+      background: hsla(280, 45%, 35%, 0.18); border: 1px solid var(--card-border);
+      border-radius: 999px; padding: 5px 14px;
+    }
+    .tag b { color: var(--accent-light); font-weight: 800; }
+    .locked-note {
+      display: flex; gap: 10px; align-items: flex-start;
+      background: hsla(45, 80%, 50%, 0.06); border: 1px solid hsla(45,80%,55%,0.25);
+      border-radius: 10px; padding: 12px 16px; margin-bottom: 18px; color: var(--gray-300); font-size: 0.9rem;
+    }
+
+    footer.foot { position: relative; z-index: 1; text-align: center; padding: 8px 20px 60px; color: var(--gray-500); font-size: 0.82rem; }
+    footer.foot a { color: var(--accent-light); text-decoration: none; }
+    footer.foot .home { display: inline-block; margin-top: 14px; padding: 8px 18px; border: 1px solid var(--card-border); border-radius: 999px; color: var(--gray-200); }
+    footer.foot .home:hover { border-color: var(--accent-light); }
+
+    @media (max-width: 640px) {
+      .two-col, .fw-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 76px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .card { opacity: 1; transform: none; transition: none; }
+      .bar > i { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <span id="themeIcon">☀️</span><span id="themeLabel">Light</span>
+  </button>
+
+  <header class="hero">
+    <span class="eyebrow">Personality Profile</span>
+    <h1>Francisco Cucullu</h1>
+    <p class="role">AI Product Manager at Telgea</p>
+    <div class="badge-row">
+      <span class="badge">ENTHUSIASTIC</span>
+      <span class="badge">CASUAL</span>
+      <span class="badge">TALKATIVE</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Profile Accuracy -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Profile Accuracy</h2></div>
+      <div class="card-body">
+        <div class="accuracy">
+          <div class="ring">
+            <svg width="124" height="124" viewBox="0 0 124 124">
+              <defs>
+                <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#c561f6" />
+                  <stop offset="100%" stop-color="#7611a6" />
+                </linearGradient>
+              </defs>
+              <circle cx="62" cy="62" r="54" fill="none" stroke="hsla(225,30%,40%,0.25)" stroke-width="11" />
+              <circle class="ring-fill" cx="62" cy="62" r="54" fill="none" stroke="url(#ringGrad)" stroke-width="11" stroke-linecap="round"
+                      stroke-dasharray="339.29" stroke-dashoffset="339.29" />
+            </svg>
+            <div class="score"><b>60</b><span>/ 100</span></div>
+          </div>
+          <div class="desc">
+            <strong>Accuracy Confidence: 60/100</strong><br />
+            Your assessments are landing.
+            <span class="next">Next step: Collect peer reviews (0 peer reviews so far)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frameworks -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Personality Frameworks</h2></div>
+      <div class="card-body">
+        <div class="fw-grid">
+          <div class="fw"><div class="k">DISC</div><div class="v">Id · Influencer</div></div>
+          <div class="fw"><div class="k">Big Five</div><div class="v">↑ Extraversion · ↑ Emotional Stability</div></div>
+          <div class="fw"><div class="k">Enneagram</div><div class="v">Type 8w7 · The Challenger</div></div>
+          <div class="fw"><div class="k">16 Personalities</div><div class="v">ENTJ · Commander</div></div>
+          <div class="fw"><div class="k">Strengths</div><div class="v">Love of Learning · Appreciation of Beauty &amp; Excellence · Bravery / Courage</div></div>
+          <div class="fw"><div class="k">Core Values</div><div class="v">Growth · Impact · Authenticity</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archetype -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Personality Archetype — <span class="accent-on-pink">Ambitious Catalyst</span></h2></div>
+      <div class="card-body">
+        <p>You are a natural force: ambitious, energetic, and driven by the urgent need to make a visible impact on the world around you. Your commanding presence and infectious confidence draw people in, but beneath the charisma lies a restless mind that questions everything and refuses to accept the status quo. You thrive on growth and authenticity, moving quickly toward meaningful challenges while leaving conventional wisdom in your wake.</p>
+        <span class="sources">Sources: 6 of 7</span>
+      </div>
+    </section>
+
+    <!-- Traits -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Personality Traits</h2></div>
+      <div class="card-body">
+        <div class="trait"><div class="top"><span class="name">Risk Tolerance</span><span class="val">Strongly Risk Tolerant (top 85%)</span></div><div class="bar"><i data-w="85"></i></div></div>
+        <div class="trait"><div class="top"><span class="name">Trust</span><span class="val">Balanced (Trusting ↔ Skeptical)</span></div><div class="bar"><i data-w="50"></i></div></div>
+        <div class="trait"><div class="top"><span class="name">Optimism</span><span class="val">Strongly Optimistic (top 77%)</span></div><div class="bar"><i data-w="77"></i></div></div>
+        <div class="trait"><div class="top"><span class="name">Pace</span><span class="val">Strongly Fast-paced (top 94%)</span></div><div class="bar"><i data-w="94"></i></div></div>
+        <div class="trait"><div class="top"><span class="name">Expression</span><span class="val">Strongly Expressive (top 92%)</span></div><div class="bar"><i data-w="92"></i></div></div>
+        <div class="trait"><div class="top"><span class="name">Collaboration</span><span class="val">Strongly Collaborative (top 77%)</span></div><div class="bar"><i data-w="77"></i></div></div>
+        <div class="trait"><div class="top"><span class="name">Dominance</span><span class="val">Strongly Dominant (top 81%)</span></div><div class="bar"><i data-w="81"></i></div></div>
+        <span class="sources">Sources: 6 of 7</span>
+      </div>
+    </section>
+
+    <!-- Natural Style -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Natural Style</h2></div>
+      <div class="card-body">
+        <div class="sub">Behavior</div>
+        <p>You move with purpose and speed, channeling your competitive energy into immediate action and clear direction.</p>
+        <ul class="clean">
+          <li>Challenging assumptions and pushing back on weak logic</li>
+          <li>Driving conversations toward decisions and outcomes fast</li>
+          <li>Reading the room and adjusting your approach on the fly</li>
+          <li>Speaking up bluntly when standards or authenticity slip</li>
+          <li>Pulling people into your vision and energy field</li>
+        </ul>
+        <span class="sources">Sources: 4 of 4</span>
+
+        <div class="sub">Communication Style</div>
+        <p>You communicate with directness and confidence, favoring clarity and momentum over politeness or consensus building.</p>
+        <ul class="clean">
+          <li>Get to the point; spare the lengthy setup and context</li>
+          <li>Bring data, logic, and a clear recommendation to discussions</li>
+          <li>Push back respectfully; you respect honest disagreement</li>
+          <li>Signal quick wins and growth opportunities in proposals</li>
+          <li>Keep pace with your speed; slow response feels like resistance</li>
+        </ul>
+        <span class="sources">Sources: 4 of 4</span>
+
+        <div class="sub">Strengths</div>
+        <p>Your greatest strengths lie in your hunger for growth, your ability to inspire action, and your willingness to challenge the status quo when excellence demands it.</p>
+        <ul class="clean">
+          <li>Driving vision and strategy into measurable action and results</li>
+          <li>Inspiring others to stretch beyond what you thought possible</li>
+          <li>Learning rapidly across new domains and skill areas</li>
+          <li>Spotting excellence and pushing teams toward higher standards</li>
+          <li>Making decisive calls under uncertainty and pressure</li>
+        </ul>
+        <span class="sources">Sources: 6 of 6</span>
+
+        <div class="sub">Blind Spots</div>
+        <p>Your strength in commanding action and challenging the status quo can blind you to the cost your directness takes on others and the value of patience in building trust.</p>
+        <ul class="clean">
+          <li>Steamrolling over thoughtful input in rush to move forward</li>
+          <li>Underestimating how your intensity and critique lands on others</li>
+          <li>Dismissing detailed preparation as unnecessary bureaucracy</li>
+          <li>Overlooking the human cost of driving relentlessly hard</li>
+          <li>Assuming quick agreement means genuine buy-in and alignment</li>
+        </ul>
+        <span class="sources">Sources: 4 of 4</span>
+      </div>
+    </section>
+
+    <!-- Decision Making -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Decision-Making Process</h2></div>
+      <div class="card-body">
+        <div class="sub">Discovery</div>
+        <ul class="clean">
+          <li>You take in people, energy, and possibility before data.</li>
+          <li>You map patterns and possibilities first, before locking onto specifics.</li>
+          <li>You balance familiar references with a bit of room for fresh angles.</li>
+          <li>Impact is the lens you bring to the questions you ask first.</li>
+        </ul>
+        <div class="sub">Evaluation</div>
+        <ul class="clean">
+          <li>You think out loud, testing ideas in conversation.</li>
+          <li>You weigh logic and consequences first; values are a check, not the lead.</li>
+          <li>You sketch a quick framework when stakes warrant it, otherwise read the room.</li>
+          <li>Options that compromise Impact have to clear a higher bar.</li>
+        </ul>
+        <div class="sub">Commitment</div>
+        <ul class="clean">
+          <li>You commit on enthusiasm, then rally others to the path.</li>
+          <li>You close the loop quickly; an open question feels like an unfinished task.</li>
+          <li>You hold the call once made, but stay willing to revisit if the picture changes.</li>
+          <li>When trade-offs collide, Growth wins the call.</li>
+        </ul>
+        <span class="sources">Sources: 4 of 4</span>
+      </div>
+    </section>
+
+    <!-- Core Motivations -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Core Motivations</h2></div>
+      <div class="card-body">
+        <div class="two-col">
+          <div>
+            <div class="sub">Driven By</div>
+            <ul class="clean">
+              <li>Autonomy to lead and shape direction without approval chains</li>
+              <li>Visible proof that your work matters and creates real impact</li>
+              <li>Worthy opponents and peers who challenge and respect you</li>
+              <li>Continuous growth and mastery of new capabilities</li>
+            </ul>
+          </div>
+          <div>
+            <div class="sub">Tries to Avoid</div>
+            <ul class="clean">
+              <li>Bureaucratic slowness and process without clear purpose</li>
+              <li>People who lack conviction or authentic engagement</li>
+              <li>Being controlled or manipulated by authority or circumstance</li>
+              <li>Environments where mediocrity is tolerated or protected</li>
+            </ul>
+          </div>
+        </div>
+        <span class="sources">Sources: 5 of 5</span>
+      </div>
+    </section>
+
+    <!-- Energy & Stress -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Energy &amp; Stress</h2></div>
+      <div class="card-body">
+        <div class="two-col">
+          <div>
+            <div class="sub">Charged (Energized By)</div>
+            <p>You come alive when learning, creating, and driving tangible impact; you thrive on autonomy, visibility, and the freedom to challenge conventions.</p>
+            <ul class="clean">
+              <li>Learning something completely new and stretching your abilities</li>
+              <li>Leading a team or project toward a meaningful breakthrough</li>
+              <li>Competing and winning, especially against tough odds</li>
+              <li>Engaging with people who think differently and debate hard</li>
+            </ul>
+          </div>
+          <div>
+            <div class="sub">Drained (Depleted By)</div>
+            <p>Repetitive work, slow bureaucracy, and false authenticity deplete you quickly; you struggle with environments that reward conformity over impact.</p>
+            <ul class="clean">
+              <li>Following processes without understanding or questioning your logic</li>
+              <li>Working with people who lack conviction or authentic engagement</li>
+              <li>Environments where mediocrity is tolerated or celebrated</li>
+              <li>Lack of clear progress or measurable evidence of impact</li>
+            </ul>
+          </div>
+        </div>
+        <span class="sources">Sources: 6 of 6</span>
+      </div>
+    </section>
+
+    <!-- Stress Patterns -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Stress Patterns</h2></div>
+      <div class="card-body">
+        <div class="stress-box lvl1">
+          <div class="t">🟡 Low Simmer</div>
+          <ul class="clean">
+            <li>Blocked from making progress or decisions being delayed</li>
+            <li>People avoiding conflict or clarity with indirect communication</li>
+            <li>His ideas or efforts dismissed without real consideration</li>
+            <li>Organizational changes that seem unnecessary or misguided</li>
+          </ul>
+        </div>
+        <div class="stress-box lvl2">
+          <div class="t">🟠 Pressure Building</div>
+          <ul class="clean">
+            <li>Repeated failures or setbacks despite his best effort</li>
+            <li>Feeling manipulated or deceived by lack of authenticity</li>
+            <li>Being forced to play politics instead of driving impact</li>
+            <li>Teams moving at snail's pace on matters that matter</li>
+          </ul>
+        </div>
+        <div class="stress-box lvl3">
+          <div class="t">🔴 Boiling Point</div>
+          <ul class="clean">
+            <li>Powerlessness; inability to change outcome he sees clearly</li>
+            <li>Loss of control over his own direction or autonomy</li>
+            <li>Betrayal by someone he trusted or invested in</li>
+            <li>Being cornered or forced to compromise core values</li>
+          </ul>
+        </div>
+        <span class="sources">Sources: 3 of 3</span>
+      </div>
+    </section>
+
+    <!-- Stress Relief -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Stress Relief</h2></div>
+      <div class="card-body">
+        <div class="two-col">
+          <div>
+            <div class="sub">De-escalation</div>
+            <ul class="clean">
+              <li>Stepping away to gain perspective and clear his head</li>
+              <li>Talking it through with someone he trusts deeply</li>
+              <li>Channeling frustration into physical activity or competition</li>
+              <li>Getting back to a project he can control and move</li>
+            </ul>
+          </div>
+          <div>
+            <div class="sub">Recovery</div>
+            <ul class="clean">
+              <li>Pursuing a learning project or skill that excites him</li>
+              <li>Engaging in creative work or activities that showcase excellence</li>
+              <li>Spending time with people who energize and challenge him</li>
+              <li>Winning at something, however small, to rebuild momentum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub">Prevention</div>
+        <ul class="clean">
+          <li>Maintaining regular outlets for competitive and physical energy</li>
+          <li>Staying in direct communication; addressing friction immediately</li>
+          <li>Protecting time for growth and learning pursuits</li>
+          <li>Ensuring his role allows real autonomy and visible impact</li>
+        </ul>
+        <span class="sources">Sources: 3 of 3</span>
+      </div>
+    </section>
+
+    <!-- Growth Roadmap -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>Personal Growth Roadmap</h2></div>
+      <div class="card-body">
+        <div class="two-col">
+          <div class="road go">
+            <div class="sub">✅ Continue</div>
+            <ul class="clean">
+              <li>Pushing yourself and others toward continuous growth and learning</li>
+              <li>Bringing decisive clarity and direction when organizations feel stuck</li>
+              <li>Challenging mediocrity and holding teams to higher standards</li>
+              <li>Building authentic connections with people who share your values</li>
+            </ul>
+          </div>
+          <div class="road stop">
+            <div class="sub">🛑 Stop</div>
+            <ul class="clean">
+              <li>Dismissing caution as weakness; pause to understand legitimate concerns</li>
+              <li>Moving so fast you leave key people confused or resentful</li>
+              <li>Framing disagreement as incompetence rather than different perspective</li>
+              <li>Assuming speed equals good decisions; sometimes slow wins</li>
+            </ul>
+          </div>
+        </div>
+        <div class="road try">
+          <div class="sub">🆕 Try</div>
+          <ul class="clean">
+            <li>Pausing before responding to check understanding and reduce miscommunication</li>
+            <li>Explicitly asking people what support you need, not assuming</li>
+            <li>Slowing down with key relationships to deepen trust and connection</li>
+            <li>Documenting your thinking so others can follow your logic later</li>
+          </ul>
+        </div>
+        <span class="sources">Sources: 5 of 5</span>
+      </div>
+    </section>
+
+    <!-- How Others Perceive You -->
+    <section class="card">
+      <div class="card-head"><span class="dot"></span><h2>How Others Perceive You <span class="accent-on-pink">— Example / Locked</span></h2></div>
+      <div class="card-body">
+        <div class="locked-note">
+          <span>🔒</span>
+          <span>This section requires 3 peer reviews to unlock. Currently <strong>0 of 3</strong> collected. The example data below is shown by Crystal as illustration only.</span>
+        </div>
+        <div class="sub">Aligned (What you &amp; peers both see)</div>
+        <div class="tagwrap">
+          <span class="tag">Decisive <b>×3</b></span><span class="tag">Analytical <b>×2</b></span><span class="tag">Collaborative</span>
+          <span class="tag">Diplomatic</span><span class="tag">Strategic</span><span class="tag">Supportive</span>
+          <span class="tag">Trustworthy</span><span class="tag">Adaptable</span>
+        </div>
+        <div class="sub">Hidden Strengths (What others see that you might miss)</div>
+        <div class="tagwrap">
+          <span class="tag">Empathetic <b>×2</b></span><span class="tag">Inspiring <b>×2</b></span><span class="tag">Patient <b>×2</b></span>
+          <span class="tag">Articulate</span><span class="tag">Creative</span><span class="tag">Curious</span>
+          <span class="tag">Encouraging</span><span class="tag">Warm</span>
+        </div>
+        <div class="sub">Blind Spots (What you see but others might miss)</div>
+        <div class="tagwrap">
+          <span class="tag">Visionary <b>×3</b></span><span class="tag">Bold <b>×2</b></span><span class="tag">Direct</span>
+          <span class="tag">Driven</span><span class="tag">Independent</span><span class="tag">Resilient</span>
+          <span class="tag">Determined</span><span class="tag">Persistent</span>
+        </div>
+        <span class="sources">Sources: 1 of 2</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    Generated from Crystal Knows · franciscocucullu@gmail.com · © 2026 Crystal<br />
+    <a class="home" href="https://franciscocucullu.com">← franciscocucullu.com</a>
+  </footer>
+
+  <script>
+    // Theme toggle (default dark)
+    (function () {
+      var root = document.documentElement, icon = document.getElementById('themeIcon'), label = document.getElementById('themeLabel');
+      var saved = localStorage.getItem('pp-theme');
+      if (saved === 'light') root.classList.replace('theme-dark', 'theme-light');
+      function sync() {
+        var light = root.classList.contains('theme-light');
+        icon.textContent = light ? '🌙' : '☀️';
+        label.textContent = light ? 'Dark' : 'Light';
+      }
+      sync();
+      document.getElementById('themeToggle').addEventListener('click', function () {
+        if (root.classList.contains('theme-light')) { root.classList.replace('theme-light', 'theme-dark'); localStorage.setItem('pp-theme', 'dark'); }
+        else { root.classList.replace('theme-dark', 'theme-light'); localStorage.setItem('pp-theme', 'light'); }
+        sync();
+      });
+    })();
+
+    // Reveal cards + animate bars + ring on scroll
+    (function () {
+      var ring = document.querySelector('.ring-fill');
+      function fillRing() {
+        if (!ring) return;
+        var pct = 60, circ = 339.29;
+        ring.style.transition = 'stroke-dashoffset 1.4s cubic-bezier(.2,.8,.2,1)';
+        ring.style.strokeDashoffset = circ - (circ * pct / 100);
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in');
+          e.target.querySelectorAll('.bar > i').forEach(function (b) { b.style.width = b.dataset.w + '%'; });
+          if (e.target.querySelector('.ring-fill')) fillRing();
+          io.unobserve(e.target);
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.card').forEach(function (c) { io.observe(c); });
+    })();
+  </script>
+</body>
+</html>
